@@ -38,6 +38,19 @@
     }
 
     to{
-        transform: scale(1);
+        transform: scale(1.125);
     }
+}
+
+.brand-img{
+    height: 750px;
+    width: 600px;
+}
+
+.brand-photo{
+    height: 100%;
+    width: 100%;
+    background-image: url("Brand img/Brand\ img\ 1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
