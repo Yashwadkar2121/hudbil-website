@@ -8,3 +8,36 @@
 .hamburger-menu:hover :nth-child(2){
     width: 100%;
 }
+
+.custom-cursor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.site-wide{
+    width: 130px;
+    height: 150px;
+    background-image: url("cursor icon/cursor\ icon.svg");
+    z-index: -1;
+}   
+
+
+.landing-title{
+    animation-name: text-ani;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes text-ani{
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
