@@ -17,7 +17,7 @@
 }
 
 .site-wide{
-    width: 130px;
+    width: 110px;
     height: 150px;
     background-image: url("cursor icon/cursor\ icon.svg");
     z-index: -1;
@@ -53,4 +53,29 @@
     background-image: url("Brand img/Brand\ img\ 1.svg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.know-more{
+    position: relative;
+    z-index: 10;
+}
+
+.know-more span{
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    width: 0;
+    height: 100%;
+    z-index: -10;
+    left: 0;
+    top: 0;
+    border-radius: 0.77rem ;
+    transition: ease 0.5s;
+}
+
+.know-more:hover span{
+    width: 100%;
+}
+
+.know-more:hover{
+    color: black;
 }
