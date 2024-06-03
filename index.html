@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
             </div>
 
             <!--Hamburger menu-->
-            <button id="nav-open">
+            <button type="button" title="nav-open" id="nav-open">
                 <div class="hamburger-menu w-9 h-7 sm:w-11 cursor-pointer">
                     <div class="h-1 w-full bg-white my-1"></div>
                     <div class="h-1 w-[50%] bg-white my-1 duration-300"></div>
@@ -38,7 +38,7 @@
                 <li><a href="/about" class="ajax-link">About</a></li>
                 <li><a href="/contact" class="ajax-link">Contact</a></li>
             </ul>
-        </div>
+        </div>
         </nav>
     </header>
 
@@ -148,7 +148,8 @@
                     self. </h1>
 
                 <div class="images mt-20 flex justify-around space-x-4">
-                    <div class="image-1 w-[12rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem]  hover:scale-[1.1] duration-300">
+                    <div
+                        class="image-1 w-[12rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem]  hover:scale-[1.1] duration-300">
                         <img src="images/img 1.svg" alt="img-1" class="w-fit">
                         <h1 class="my-4 text-2xl font-bold flex items-center">
                             <hr class="w-3 sm:w-6 mx-3"> RESEARCH
@@ -158,7 +159,8 @@
                             the studio.</p>
                     </div>
 
-                    <div class="image-1 w-[12rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem] hover:scale-[1.1] duration-300">
+                    <div
+                        class="image-1 w-[12rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem] hover:scale-[1.1] duration-300">
                         <img src="images/img 2.svg" alt="img-1"
                             class="w-fit sm:h-[22rem] md:h-[20rem] lg:h-[25rem] mt-6">
                         <h1 class="my-4 text-2xl font-bold flex items-center">
@@ -173,7 +175,8 @@
 
                 <!--images seaction 2-->
                 <div class="images-2 flex justify-around space-x-4 mt-20">
-                    <div class="image-1 w-[12rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem] hover:scale-[1.1] duration-300">
+                    <div
+                        class="image-1 w-[12rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem] hover:scale-[1.1] duration-300">
                         <img src="images/img 3.svg" alt="img-1" class="w-fit">
                         <h1 class="my-4 text-2xl font-bold flex items-center">
                             <hr class="w-3 sm:w-6 mx-3"> UI/UX DESIGN
@@ -182,7 +185,8 @@
                             release products users love and check off business goals.</p>
                     </div>
 
-                    <div class="image-1 w-[10rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem] hover:scale-[1.1] duration-300">
+                    <div
+                        class="image-1 w-[10rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem] hover:scale-[1.1] duration-300">
                         <img src="images/img 4.svg" alt="img-1" class="w-fit -mt-10">
                         <h1 class="my-4 text-2xl font-bold flex items-center">
                             <hr class="w-3 sm:w-6 mx-3"> BE-SPOKEN DEVELOPMENT
@@ -216,11 +220,11 @@
             </div>
 
 
-
             <div class="mt-20 mx-3 flex justify-between">
                 <a NAME="bookmark_name"></a>
                 <div class="about-brand">
-                    <img src="Brands logo/Brand 1.svg" alt="brand" class="w-[5rem] sm:w-[8rem] md:w-[12rem]">
+                    <img id="brand-logo" src="Brands logo/Brand 1.svg" alt="brand"
+                        class="w-[5rem] sm:w-[8rem] md:w-[12rem]">
                     <h1 class="font-semibold sm:text-xl">More than just a digital agency, aside from beautiful websites
                         and applications, we love solving thorny problems with smart, </h1>
 
@@ -261,19 +265,230 @@
                 </div>
             </div>
 
-            
+
             <div class="btn-div flex justify-between items-center">
-                <button class="know-more mt-28 text-xs md:text-lg p-3 border border-white rounded-xl"> <span></span> Know More</button>
+                <button class="know-more mt-28 text-xs md:text-lg p-3 border border-white rounded-xl"> <span></span>
+                    Know More</button>
                 <div class="mt-28 -mr-6 lg:mr-2">
-                    <button><i class="fa-solid fa-arrow-left border border-white p-3 rounded-xl hover:bg-white hover:text-black"></i></button>
-                    <button><i class="fa-solid fa-arrow-right border border-white p-3 rounded-xl hover:bg-white hover:text-black" onclick=""></i></button>
+                    <button type="button" title="left-arrow" id="left-arrow"><i
+                            class="fa-solid fa-arrow-left border border-white p-3 rounded-xl hover:bg-white hover:text-black"></i></button>
+                    <button type="button" title="right-arrow" id="right-arrow"><i
+                            class="fa-solid fa-arrow-right border border-white p-3 rounded-xl hover:bg-white hover:text-black"
+                            onclick=""></i></button>
                 </div>
             </div>
 
+            <!-- lastest Projects -->
+            <div class="mt-52 mx-1 ">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">lastest Projects</h1>
+                <h3 class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">More than just a digital
+                    agency, aside from beautiful websites and applications, we love solving
+                    thorny <br />problems with smart, custom software. From turning spreadsheets into custom
+                    solutions,
+                    integrating <br /> multiple platforms or automating manual processes, we can tackle any
+                    challenge.</h3>
+            </div>
 
+            <div class="mt-20">
+                <table id="table1">
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+                        <td>Blue Mail</td>
+                        <td>Website App</td>
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
 
+                        <td>Sunglass Style</td>
+                        <td>eCommerce</td>
 
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>SNPF</td>
+                        <td>App</td>
+
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>Kainga Ora</td>
+                        <td>Website</td>
+
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>Fortis</td>
+                        <td>eCommerce</td>
+
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>Cumulo9</td>
+                        <td>Website</td>
+
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>Trace My Egg</td>
+                        <td>Website</td>
+
+                    </tr>
+                </table>
+            </div>
+            <!-- Our Customers -->
+            <div class="mt-52 mx-1 ">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">Our Customers</h1>
+                <h3 class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">We work with ambition
+                    companies and oraganistion looking <br /> for a devoted long-term digital partner.</h3>
+            </div>
+            <div class="mt-20">
+                <table id="table2">
+                    <tr>
+                        <td><img src="/customer logo/01.svg" alt=""></td>
+                        <td><img src="/customer logo/02.svg" alt=""></td>
+                        <td><img src="/customer logo/03.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./customer logo/04.svg" alt=""></td>
+                        <td><img src="/customer logo/05.svg" alt=""></td>
+                        <td><img src="/customer logo/06.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./customer logo/07.svg" alt=""></td>
+                        <td><img src="/customer logo/08.svg" alt=""></td>
+                        <td><img src="/customer logo/09.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./customer logo/10.svg" alt=""></td>
+                        <td><img src="/customer logo/11.svg" alt=""></td>
+                        <td><img src="/customer logo/12.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./customer logo/13.svg" alt=""></td>
+                        <td><img src="/customer logo/14.svg" alt=""></td>
+                        <td><img src="/customer logo/15.svg" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mt-52 mx-1 ">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">Customers love</h1>
+            </div>
+            <div class="mt-52 mx-1">
+                <div class="flex flex-row">
+                    <div class="basic-1/3">
+                        <img src=" /customer love section/01.svg" alt="" srcset="">
+                        <h3 class="mt-10">Expectations. The Collins dictionary defines them as
+                            “your strong hopes or beliefs that something will
+                            happen or that you will get something that you want.”
+                            In creating a fresh, uncompromised web platform and…</h3>
+                        <h6 class="mt-10">Todd & Jackie Scott</h6>
+                        <h6>Owners of the National Business Review</h6>
+                    </div>
+                    <div class="basic-1/3">
+                        <img src="/customer love section/02.svg" alt="" srcset="">
+                        <h3 class="mt-10">Sunglass Style arrived a little late to the digital age. We
+                            understood how critical our and every business's online
+                            presence was, but the project's scale was daunting.
+                            However, after meeting with Nero Motion early on in o…</h3>
+                        <h6 class="mt-10">Sven Ericson</h6>
+                        <h6>OWNER</h6>
+                    </div>
+                    <div class="basic-1/3">
+                        <img src="/customer love section/03.svg" alt="" srcset="">
+                        <h3 class="mt-10">Over the years, Nero Motion have worked with us on an
+                            extensive list of successful outputs ranging from
+                            websites, digital advertising, video, design, marketing
+                            collateral and more. The team provide effective</h3>
+
+                        <h6 class="mt-10">Debbie Chin & Marketing team</h6>
+                        <h6>Senior Marketing Manager</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Resource for you Section-->
+            <div class="mt-52 mx-1 ">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">Resource <br />for you</h1>
+                <h3 class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">More than just a digital
+                    agency, aside from beautiful websites and applications, we love solving thorny problems with smart,
+                    custom software. From turning spreadsheets into custom solutions, integrating multiple platforms or
+                    automating manual processes, we can tackle any challenge.</h3>
+            </div>
+            <div class="mt-20">
+                <div class="flex flex-row">
+                    <div class="basic-1/3">
+                        <div class="resouces-img"><img src="/Resources for you section/01.svg" alt=""></div>
+                        <h3>WWF Climate Solver</h3>
+                        <h3>Saving the planet
+                            through innovative low
+                            carbon technologies</h3>
+                    </div>
+                    <div class="basic-1/3">
+                        <div class="resouces-img"><img src="/Resources for you section//02.svg" alt=""></div>
+                        <h3>WWF Climate Solver</h3>
+                        <h3>Saving the planet
+                            through innovative low
+                            carbon technologies</h3>
+                    </div>
+                    <div class="basic-1/3">
+                        <div class="resouces-img"><img src="/Resources for you section/03.svg" alt=""></div>
+                        <h3>WWF Climate Solver</h3>
+                        <h3>Saving the planet
+                            through innovative low
+                            carbon technologies</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Moving Img -->
+            <div id="moving-img"> <img src="/images/footer-section.svg" alt="" width="500px" height="500px"></div>
+
+            <!-- Let's connect and collaborate Section-->
+            <footer class="mt-10 mx-1 ">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">Let's connect <br />
+                    and collaborate</h1>
+                <div>
+                    <h5>
+                        <button type="button" title="start-btn">Start a Project</button>
+                        <label for="contact-email">JOIN THE NEWSLETTER</label><input type="email" name="email"
+                            id="contact-email">
+                    </h5>
+                </div>
+                <table>
+                    <div>
+                        <h3>EMAIL US AT</h3>
+                        <h3>info@hudbil.com</h3>
+                        <h3>CALL US ON</h3>
+                        <h3>+91 88 00 22 1006</h3>
+                    </div>
+                    <div>
+                        <tr>
+                            <td>DROP BY AT BANGALORE OFFICE</td>
+                            <td>Drop by at MUMBAI OFFICE</td>
+                            <td>DROP BY AT DELHI OFFICE</td>
+                            <td>DROP BY AT BANGALORE OFFICE</td>
+                        <tr>
+                            <td>No 235, 2nd & 3rd Floor, 13th Cross <br> Road 2nd Stage, Indiranagar <br />
+                                Hoysala Nagar, Bangalore - 560038, </td>
+                            <td>74/II, “C” Cross Road, Opp Gate No 2, <br /> MIDC - 400093, Seepz, <br>
+                                Andheri East, Mumbai, Maharashtra. </td>
+                            <td>90B, Delhi - Jaipur Expy, Udyog <br /> Vihar, Sector 18, Gurugram, Sarhol, <br />
+                                Haryana -
+                                122008.
+                            </td>
+                            <td>No 235, 2nd & 3rd Floor, 13th Cross <br> Road 2nd Stage, Indiranagar <br />
+                                Hoysala Nagar, Bangalore - 560038, </td>
+                        </tr>
+                        </tr>
+                    </div>
+
+                </table>
+                <div>
+                    <h5>© 2024 Hudbil Private Limited. All rights reserved | Privacy Policy | Terms & Conditions
+                        | Cookies Policies </h5>
+                    <button type="button">Get in Touch</button>
+                    <button type="button">Chat with Elia</button>
+                    <button type="button">Fb &nbsp; Li &nbsp; lg &nbsp; Tw</button>
+                </div>
+            </footer>
             <script src="script.js"></script>
+
 </body>
 
 </html>
