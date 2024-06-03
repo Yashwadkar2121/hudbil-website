@@ -27,7 +27,6 @@ function TrackCursor(evt) {
 
 //Navbar - on Click
 document.addEventListener("DOMContentLoaded", function () {
-<<<<<<< HEAD
   const navOpenButton = document.getElementById("nav-open");
   const navigationMenu = document.getElementById("navigation-menu");
 
@@ -66,15 +65,3 @@ document.getElementById("right-arrow").addEventListener("click", () => {
 });
 
 updateBrand();
-=======
-    const navOpenButton = document.getElementById("nav-open");
-    const navigationMenu = document.getElementById("navigation-menu");
-  
-    navOpenButton.addEventListener("click", function () {
-      navigationMenu.classList.toggle("hidden");
-    });
-  });
-
-
-  
->>>>>>> dbb6a7170a8bdcb78c7bf6905df8a9d58717a072
