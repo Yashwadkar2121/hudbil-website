@@ -18,3 +18,14 @@ function TrackCursor(evt){
     const h = site_wide_cursor.clientHeight;
     site_wide_cursor.style.transform = `translate(${evt.clientX - w/2}px, ${evt.clientY - h/2}px)`;
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navOpenButton = document.getElementById("nav-open");
+    const navigationMenu = document.getElementById("navigation-menu");
+  
+    navOpenButton.addEventListener("click", function () {
+      navigationMenu.classList.toggle("hidden");
+    });
+  });
