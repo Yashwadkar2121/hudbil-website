@@ -77,13 +77,13 @@
 }
 
 /* navbar-style */
-.navbar-items {
+#navigation-menu {
   font-weight: 700;
 }
-ul li {
+/* ul li {
   font-size: 3.5rem;
   text-align: right;
-}
+} */
 
 ul li:hover {
   color: gray;
@@ -99,24 +99,30 @@ ul li:hover {
 #table1 tr {
   border-bottom: 1px solid rgb(67, 57, 57);
 }
-#table1 td:first-of-type {
-  padding: 1.5%;
-  padding-right: 40%;
+#table1 tr td {
+  padding: 1%;
 }
 #table1 td:last-of-type {
-  font-size: 1rem;
   text-align: right;
 }
 /* Our Customers */
 #table2 {
   margin: auto;
   width: 80%;
-}
-#table2 tr {
   text-align: center;
 }
-#table2 img {
-  margin: 3%;
+
+#table2 td {
+  text-align: center;
 }
 
 /* Resources For you */
+#moving-img {
+  height: 500px;
+  overflow: hidden;
+}
+
+#moving-img img {
+  width: 100%;
+  height: auto;
+}
