@@ -1,5 +1,6 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Fontawesome script-->
+    <script src="https://kit.fontawesome.com/85dff2eee7.js" crossorigin="anonymous"></script>
+
+    <title>Hudbil Website</title>
 </head>
 
 <body class="bg-black">
@@ -20,27 +25,55 @@
             </div>
 
             <!--Hamburger menu-->
-            <button id="nav-open">
+            <button type="button" title="nav-open" id="nav-open">
                 <div class="hamburger-menu w-9 h-7 sm:w-11 cursor-pointer">
                     <div class="h-1 w-full bg-white my-1"></div>
                     <div class="h-1 w-[50%] bg-white my-1 duration-300"></div>
                 </div>
             </button>
 
+            <!-- Navbar-close-btn -->
+            <button type="button" title="nav-close" id="nav-close" class="hidden">
+                <i class="fa-solid fa-x"></i>
+            </button>
         </nav>
 
-        <!-- Navigation Menu -->
-        <div class="navbar-items hidden " id="navigation-menu">
-            <ul>
-                <li><a href="index.html" class="ajax-link">Home</a></li>
-                <li><a href="#bookmark_name" class="ajax-link">Work</a></li>
-                <li><a href="/services" class="ajax-link">Services</a></li>
-                <li><a href="/about" class="ajax-link">About</a></li>
-                <li><a href="/contact" class="ajax-link">Contact</a></li>
-            </ul>
-                    
+        <div class="navbar-items hidden heading-1 mx-5 mt-52 p-10" id="navigation-menu">
+            <div class="mt-72 pl-10 float-left">
+                <h5 class="font-bold text-sm md:text-xl ">Wide has been chosen
+                    by
+                    camviva, a Mahindra group company, to rode their <br /> corporate website
+                    and other
+                    digital marketing assets.</h5>
+                <div class="flex space-x-10 my-6 text-xs font-bold">
+                    <div class="h-fit">
+                        <p class="mx-1 text-white text-opacity-50 ">Follow us</p>
+                    </div>
+
+                    <div class="h-fit">
+                        <p class="mx-1">Facebook</p>
+                    </div>
+
+                    <div class="h-fit">
+                        <p class="mx-1">awards</p>
+                    </div>
+
+                    <div class="h-fit">
+                        <p class="mx-1">Behance</p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" class="ajax-link">Home</a></li>
+                    <li><a href="#bookmark_name" class="ajax-link">Work</a></li>
+                    <li><a href="/services" class="ajax-link">Services</a></li>
+                    <li><a href="/about" class="ajax-link">About</a></li>
+                    <li><a href="/contact" class="ajax-link">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        </nav>
     </header>
 
     <!--Heading-->
@@ -205,9 +238,6 @@
                 <div class="custom-cursor site-wide"></div>
             </div>
 
-
-
-
             <!--Brands -->
 
             <div class="mt-52 mx-1 ">
@@ -221,13 +251,20 @@
             </div>
 
 
-
             <div class="mt-20 mx-3 flex justify-between">
                 <a NAME="bookmark_name"></a>
                 <div class="about-brand">
-                    <img src="Brands logo/Brand 1.svg" alt="brand" class="w-[5rem] sm:w-[8rem] md:w-[12rem]">
-                    <h1 class="font-semibold sm:text-xl">More than just a digital agency, aside from beautiful websites
+
+                    <div class="mb-10">
+                        <img id="brand-logo" src="Brands logo/Brand 1.svg" alt="brand"
+                            class="w-[5rem] sm:w-[8rem] md:w-[12rem]">
+                    </div>
+
+
+                    <h1 class="font-semibold sm:text-xl">More than just a digital agency, aside from beautiful
+                        websites
                         and applications, we love solving thorny problems with smart, </h1>
+
 
                     <div class="hr-line-div flex mt-10 items-center space-x-3">
                         <hr class="w-5">
@@ -268,21 +305,240 @@
 
 
             <div class="btn-div flex justify-between items-center">
-                <button class="know-more mt-28 text-xs md:text-lg p-3 border border-white rounded-xl"> <span></span>
+                <button type="button" class="know-more mt-28 text-xs md:text-lg p-3 border border-white rounded-xl">
+                    <span></span>
                     Know More</button>
                 <div class="mt-28 -mr-6 lg:mr-2">
-                    <button><i
+                    <button type="button" title="left-arrow" id="left-arrow"><i
                             class="fa-solid fa-arrow-left border border-white p-3 rounded-xl hover:bg-white hover:text-black"></i></button>
-                    <button><i
+                    <button type="button" title="right-arrow" id="right-arrow"><i
                             class="fa-solid fa-arrow-right border border-white p-3 rounded-xl hover:bg-white hover:text-black"
                             onclick=""></i></button>
                 </div>
             </div>
 
+            <!-- lastest Projects -->
+            <div class="mt-52 mx-1 ">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">lastest Projects</h1>
+                <h3 class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">More than just a digital
+                    agency, aside from beautiful websites and applications, we love solving
+                    thorny <br />problems with smart, custom software. From turning spreadsheets into custom
+                    solutions,
+                    integrating <br /> multiple platforms or automating manual processes, we can tackle any
+                    challenge.</h3>
+            </div>
+
+            <div class="mt-20">
+                <table id="table1">
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+                        <td>Blue Mail</td>
+                        <td>Website App</td>
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>Sunglass Style</td>
+                        <td>eCommerce</td>
+
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>SNPF</td>
+                        <td>App</td>
+
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>Kainga Ora</td>
+                        <td>Website</td>
+
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>Fortis</td>
+                        <td>eCommerce</td>
+
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>Cumulo9</td>
+                        <td>Website</td>
+
+                    </tr>
+                    <tr class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">
+
+                        <td>Trace My Egg</td>
+                        <td>Website</td>
+
+                    </tr>
+                </table>
+            </div>
+            <!-- Our Customers -->
+            <div class="mt-52 mx-1 ">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">Our Customers</h1>
+                <h3 class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">We work with ambition
+                    companies and oraganistion looking <br /> for a devoted long-term digital partner.</h3>
+            </div>
+            <div class="mt-20">
+                <table id="table2">
+                    <tr>
+                        <td><img src="/customer logo/01.svg" alt=""></td>
+                        <td><img src="/customer logo/02.svg" alt=""></td>
+                        <td><img src="/customer logo/03.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./customer logo/04.svg" alt=""></td>
+                        <td><img src="/customer logo/05.svg" alt=""></td>
+                        <td><img src="/customer logo/06.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./customer logo/07.svg" alt=""></td>
+                        <td><img src="/customer logo/08.svg" alt=""></td>
+                        <td><img src="/customer logo/09.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./customer logo/10.svg" alt=""></td>
+                        <td><img src="/customer logo/11.svg" alt=""></td>
+                        <td><img src="/customer logo/12.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./customer logo/13.svg" alt=""></td>
+                        <td><img src="/customer logo/14.svg" alt=""></td>
+                        <td><img src="/customer logo/15.svg" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Customer Love section -->
+            <div class="mt-52 mx-1 flex justify-between">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl">Customers love</h1>
+                <div class="mt-2 -mr-6 lg:mr-2 ">
+                    <button type="button" title="left-arrow" id="left-arrow-customer"><i
+                            class="fa-solid fa-arrow-left border border-white p-3 rounded-xl hover:bg-white hover:text-black"></i></button>
+                    <button type="button" title="right-arrow" id="right-arrow-customer"><i
+                            class="fa-solid fa-arrow-right border border-white p-3 rounded-xl hover:bg-white hover:text-black"
+                            onclick=""></i></button>
+                </div>
+            </div>
+
+            <div class="mt-20 mx-1">
+                <div class="flex flex-row">
+                    <div>
+                        <img src=" /customer love section/01.svg" alt="" srcset="">
+                        <h3 class="mt-10">Expectations. The Collins dictionary defines them as
+                            “your strong hopes or beliefs that something will
+                            happen or that you will get something that you want.”
+                            In creating a fresh, uncompromised web platform and…</h3>
+                        <h6 class="mt-10">Todd & Jackie Scott</h6>
+                        <h6>Owners of the National Business Review</h6>
+                    </div>
+                    <div>
+                        <img src="/customer love section/02.svg" alt="" srcset="">
+                        <h3 class="mt-10">Sunglass Style arrived a little late to the digital age. We
+                            understood how critical our and every business's online
+                            presence was, but the project's scale was daunting.
+                            However, after meeting with Nero Motion early on in o…</h3>
+                        <h6 class="mt-10">Sven Ericson</h6>
+                        <h6>OWNER</h6>
+                    </div>
+                    <div>
+                        <img src="/customer love section/03.svg" alt="" srcset="">
+                        <h3 class="mt-10">Over the years, Nero Motion have worked with us on an
+                            extensive list of successful outputs ranging from
+                            websites, digital advertising, video, design, marketing
+                            collateral and more. The team provide effective</h3>
+
+                        <h6 class="mt-10">Debbie Chin & Marketing team</h6>
+                        <h6>Senior Marketing Manager</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Resource for you Section-->
+            <div class="mt-52 mx-1 ">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">Resource <br />for you</h1>
+                <h3 class="mt-5 text-sm font-extralight sm:text-lg md:text-2xl lg:text-3xl">More than just a digital
+                    agency, aside from beautiful websites and applications, we love solving thorny problems with smart,
+                    custom software. From turning spreadsheets into custom solutions, integrating multiple platforms or
+                    automating manual processes, we can tackle any challenge.</h3>
+            </div>
+            <div class="mt-20">
+                <div class="flex flex-row">
+                    <div class="basic-1/3">
+                        <div class="resouces-img"><img src="/Resources for you section/01.svg" alt=""></div>
+                        <h3>WWF Climate Solver</h3>
+                        <h3>Saving the planet
+                            through innovative low
+                            carbon technologies</h3>
+                    </div>
+                    <div class="basic-1/3">
+                        <div class="resouces-img"><img src="/Resources for you section//02.svg" alt=""></div>
+                        <h3>WWF Climate Solver</h3>
+                        <h3>Saving the planet
+                            through innovative low
+                            carbon technologies</h3>
+                    </div>
+                    <div class="basic-1/3">
+                        <div class="resouces-img"><img src="/Resources for you section/03.svg" alt=""></div>
+                        <h3>WWF Climate Solver</h3>
+                        <h3>Saving the planet
+                            through innovative low
+                            carbon technologies</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Moving Img -->
+            <div id="moving-img"> <img src="/images/footer-section.svg" alt="" width="500px" height="500px"></div>
+
+            <!-- Let's connect and collaborate Section-->
+            <footer class="mt-10 mx-1 ">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">Let's connect <br />
+                    and collaborate</h1>
+                <div>
+                    <h5>
+                        <button type="button" title="start-btn">Start a Project</button>
+                        <label for="contact-email">JOIN THE NEWSLETTER</label><input type="email" name="email"
+                            id="contact-email">
+                    </h5>
+                </div>
+            
+                <div>
+                    <h3>EMAIL US AT</h3>
+                    <h3>info@hudbil.com</h3>
+                    <h3>CALL US ON</h3>
+                    <h3>+91 88 00 22 1006</h3>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>DROP BY AT BANGALORE OFFICE</td>
+                            <td>Drop by at MUMBAI OFFICE</td>
+                            <td>DROP BY AT DELHI OFFICE</td>
+                            <td>DROP BY AT BANGALORE OFFICE</td>
+                        <tr>
+                            <td>No 235, 2nd & 3rd Floor, 13th Cross <br> Road 2nd Stage, Indiranagar <br />
+                                Hoysala Nagar, Bangalore - 560038, </td>
+                            <td>74/II, “C” Cross Road, Opp Gate No 2, <br /> MIDC - 400093, Seepz, <br>
+                                Andheri East, Mumbai, Maharashtra. </td>
+                            <td>90B, Delhi - Jaipur Expy, Udyog <br /> Vihar, Sector 18, Gurugram, Sarhol, <br />
+                                Haryana -
+                                122008.
+                            </td>
+                            <td>No 235, 2nd & 3rd Floor, 13th Cross <br> Road 2nd Stage, Indiranagar <br />
+                                Hoysala Nagar, Bangalore - 560038, </td>
+                        </tr>
+                        </tr>
+                    </table>
+                </div>
 
 
-
+                <div>
+                    <h5>© 2024 Hudbil Private Limited. All rights reserved | Privacy Policy | Terms & Conditions
+                        | Cookies Policies </h5>
+                    <button type="button">Get in Touch</button>
+                    <button type="button">Chat with Elia</button>
+                    <button type="button">Fb &nbsp; Li &nbsp; lg &nbsp; Tw</button>
+                </div>
+            </footer>
             <script src="script.js"></script>
+
 </body>
 
 </html>
