@@ -76,39 +76,32 @@
   color: black;
 }
 
-/* navbar-styke */
+/* navbar-style */
 .navbar-items {
-  width: 100%;
-  height: 100%;
-  padding: 2%;
-  padding-top: 15vh;
-  padding-right: 5vh;
-  font-size: xx-large;
   font-weight: 700;
 }
 ul li {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: right;
 }
 
-li:hover {
-  color: rgba(43, 36, 36, 0.368);
+ul li:hover {
+  color: gray;
 }
-
+.noscroll {
+  overflow: hidden;
+}
 /* Latest project */
 #table1 {
   margin: auto;
-  border: 1px solid white;
-  border-left: none;
-  border-right: none;
+  width: 80%;
 }
 #table1 tr {
-  border: 1px solid white;
-  border-left: none;
-  border-right: none;
+  border-bottom: 1px solid rgb(67, 57, 57);
 }
 #table1 td:first-of-type {
-  padding-right: 50vh;
+  padding: 1.5%;
+  padding-right: 40%;
 }
 #table1 td:last-of-type {
   font-size: 1rem;
@@ -117,16 +110,13 @@ li:hover {
 /* Our Customers */
 #table2 {
   margin: auto;
-  border: none;
+  width: 80%;
 }
-
+#table2 tr {
+  text-align: center;
+}
 #table2 img {
-  margin: 2vh;
-  padding: 0vh 5vh;
+  margin: 3%;
 }
 
 /* Resources For you */
-#moving-img {
-  min-height: 20vh;
-  max-height: 50vh;
-}

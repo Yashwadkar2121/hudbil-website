@@ -8,6 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Fontawesome script-->
+    <script src="https://kit.fontawesome.com/85dff2eee7.js" crossorigin="anonymous"></script>
+
     <title>Hudbil Website</title>
 </head>
 
@@ -29,20 +32,48 @@
                 </div>
             </button>
 
+            <!-- Navbar-close-btn -->
+            <button type="button" title="nav-close" id="nav-close" class="hidden">
+                <i class="fa-solid fa-x"></i>
+            </button>
         </nav>
 
-        <!-- Navigation Menu -->
-        <div class="navbar-items hidden " id="navigation-menu">
-            <ul>
-                <li><a href="index.html" class="ajax-link">Home</a></li>
-                <li><a href="#bookmark_name" class="ajax-link">Work</a></li>
-                <li><a href="/services" class="ajax-link">Services</a></li>
-                <li><a href="/about" class="ajax-link">About</a></li>
-                <li><a href="/contact" class="ajax-link">Contact</a></li>
-            </ul>
+        <div class="navbar-items hidden heading-1 mx-5 mt-52 p-10" id="navigation-menu">
+            <div class="mt-72 pl-10 float-left">
+                <h5 class="font-bold text-sm md:text-xl ">Wide has been chosen
+                    by
+                    camviva, a Mahindra group company, to rode their <br /> corporate website
+                    and other
+                    digital marketing assets.</h5>
+                <div class="flex space-x-10 my-6 text-xs font-bold">
+                    <div class="h-fit">
+                        <p class="mx-1 text-white text-opacity-50 ">Follow us</p>
+                    </div>
 
+                    <div class="h-fit">
+                        <p class="mx-1">Facebook</p>
+                    </div>
+
+                    <div class="h-fit">
+                        <p class="mx-1">awards</p>
+                    </div>
+
+                    <div class="h-fit">
+                        <p class="mx-1">Behance</p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" class="ajax-link">Home</a></li>
+                    <li><a href="#bookmark_name" class="ajax-link">Work</a></li>
+                    <li><a href="/services" class="ajax-link">Services</a></li>
+                    <li><a href="/about" class="ajax-link">About</a></li>
+                    <li><a href="/contact" class="ajax-link">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        </nav>
     </header>
 
     <!--Heading-->
@@ -207,9 +238,6 @@
                 <div class="custom-cursor site-wide"></div>
             </div>
 
-
-
-
             <!--Brands -->
 
             <div class="mt-52 mx-1 ">
@@ -226,10 +254,17 @@
             <div class="mt-20 mx-3 flex justify-between">
                 <a NAME="bookmark_name"></a>
                 <div class="about-brand">
-                    <img id="brand-logo" src="Brands logo/Brand 1.svg" alt="brand"
-                        class="w-[5rem] sm:w-[8rem] md:w-[12rem]">
-                    <h1 class="font-semibold sm:text-xl">More than just a digital agency, aside from beautiful websites
+
+                    <div class="mb-10">
+                        <img id="brand-logo" src="Brands logo/Brand 1.svg" alt="brand"
+                            class="w-[5rem] sm:w-[8rem] md:w-[12rem]">
+                    </div>
+
+
+                    <h1 class="font-semibold sm:text-xl">More than just a digital agency, aside from beautiful
+                        websites
                         and applications, we love solving thorny problems with smart, </h1>
+
 
                     <div class="hr-line-div flex mt-10 items-center space-x-3">
                         <hr class="w-5">
@@ -270,7 +305,8 @@
 
 
             <div class="btn-div flex justify-between items-center">
-                <button class="know-more mt-28 text-xs md:text-lg p-3 border border-white rounded-xl"> <span></span>
+                <button type="button" class="know-more mt-28 text-xs md:text-lg p-3 border border-white rounded-xl">
+                    <span></span>
                     Know More</button>
                 <div class="mt-28 -mr-6 lg:mr-2">
                     <button type="button" title="left-arrow" id="left-arrow"><i
@@ -371,12 +407,21 @@
                     </tr>
                 </table>
             </div>
-            <div class="mt-52 mx-1 ">
-                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl my-5">Customers love</h1>
+            <!-- Customer Love section -->
+            <div class="mt-52 mx-1 flex justify-between">
+                <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl">Customers love</h1>
+                <div class="mt-2 -mr-6 lg:mr-2 ">
+                    <button type="button" title="left-arrow" id="left-arrow-customer"><i
+                            class="fa-solid fa-arrow-left border border-white p-3 rounded-xl hover:bg-white hover:text-black"></i></button>
+                    <button type="button" title="right-arrow" id="right-arrow-customer"><i
+                            class="fa-solid fa-arrow-right border border-white p-3 rounded-xl hover:bg-white hover:text-black"
+                            onclick=""></i></button>
+                </div>
             </div>
-            <div class="mt-52 mx-1">
+
+            <div class="mt-20 mx-1">
                 <div class="flex flex-row">
-                    <div class="basic-1/3">
+                    <div>
                         <img src=" /customer love section/01.svg" alt="" srcset="">
                         <h3 class="mt-10">Expectations. The Collins dictionary defines them as
                             “your strong hopes or beliefs that something will
@@ -385,7 +430,7 @@
                         <h6 class="mt-10">Todd & Jackie Scott</h6>
                         <h6>Owners of the National Business Review</h6>
                     </div>
-                    <div class="basic-1/3">
+                    <div>
                         <img src="/customer love section/02.svg" alt="" srcset="">
                         <h3 class="mt-10">Sunglass Style arrived a little late to the digital age. We
                             understood how critical our and every business's online
@@ -394,7 +439,7 @@
                         <h6 class="mt-10">Sven Ericson</h6>
                         <h6>OWNER</h6>
                     </div>
-                    <div class="basic-1/3">
+                    <div>
                         <img src="/customer love section/03.svg" alt="" srcset="">
                         <h3 class="mt-10">Over the years, Nero Motion have worked with us on an
                             extensive list of successful outputs ranging from
@@ -453,14 +498,15 @@
                             id="contact-email">
                     </h5>
                 </div>
-                <table>
-                    <div>
-                        <h3>EMAIL US AT</h3>
-                        <h3>info@hudbil.com</h3>
-                        <h3>CALL US ON</h3>
-                        <h3>+91 88 00 22 1006</h3>
-                    </div>
-                    <div>
+            
+                <div>
+                    <h3>EMAIL US AT</h3>
+                    <h3>info@hudbil.com</h3>
+                    <h3>CALL US ON</h3>
+                    <h3>+91 88 00 22 1006</h3>
+                </div>
+                <div>
+                    <table>
                         <tr>
                             <td>DROP BY AT BANGALORE OFFICE</td>
                             <td>Drop by at MUMBAI OFFICE</td>
@@ -479,9 +525,10 @@
                                 Hoysala Nagar, Bangalore - 560038, </td>
                         </tr>
                         </tr>
-                    </div>
+                    </table>
+                </div>
 
-                </table>
+
                 <div>
                     <h5>© 2024 Hudbil Private Limited. All rights reserved | Privacy Policy | Terms & Conditions
                         | Cookies Policies </h5>

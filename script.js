@@ -28,10 +28,22 @@ function TrackCursor(evt) {
 //Navbar - on Click
 document.addEventListener("DOMContentLoaded", function () {
   const navOpenButton = document.getElementById("nav-open");
+  const navCloseButton = document.getElementById("nav-close");
   const navigationMenu = document.getElementById("navigation-menu");
+  const body = document.body;
 
   navOpenButton.addEventListener("click", function () {
-    navigationMenu.classList.toggle("hidden");
+    navigationMenu.classList.remove("hidden");
+    navOpenButton.classList.add("hidden");
+    navCloseButton.classList.remove("hidden");
+    body.classList.add("noscroll");
+  });
+
+  navCloseButton.addEventListener("click", function () {
+    navigationMenu.classList.add("hidden");
+    navOpenButton.classList.remove("hidden");
+    navCloseButton.classList.add("hidden");
+    body.classList.remove("noscroll");
   });
 });
 
