@@ -77,3 +77,65 @@ document.getElementById("right-arrow").addEventListener("click", () => {
 });
 
 updateBrand();
+
+const customerGrid = document.getElementById("customer-grid");
+const leftArrowButton = document.getElementById("left-arrow-customer");
+const rightArrowButton = document.getElementById("right-arrow-customer");
+
+const customerData = [
+  {
+    img: "/customer love section/01.svg",
+    h3: "Expectations. The Collins dictionary defines them as “your strong hopes or beliefs that something will happen or that you will get something that you want.” In creating a fresh, uncompromised web platform and…",
+    h6_1: "Todd & Jackie Scott",
+    h6_2: "Owners of the National Business Review",
+  },
+  {
+    img: "/customer love section/02.svg",
+    h3: "Sunglass Style arrived a little late to the digital age. We understood how critical our and every business's online presence was, but the project's scale was daunting. However, after meeting with Nero Motion early on in o…",
+    h6_1: "Sven Ericson",
+    h6_2: "OWNER",
+  },
+  {
+    img: "/customer love section/03.svg",
+    h3: "Over the years, Nero Motion have worked with us on an extensive list of successful outputs ranging from websites, digital advertising, video, design, marketing collateral and more. The team provide effective",
+    h6_1: "Debbie Chin & Marketing team",
+    h6_2: "Senior Marketing Manager",
+  },
+];
+
+let currentCustomerIndex = 0;
+
+function generateGridColumns() {
+  const gridColumnHTML = customerData
+    .slice(currentCustomerIndex, currentCustomerIndex + 3)
+    .map((customer, index) => {
+      return `
+      <div class="mt-5">
+        <img src="${customer.img}" alt="" srcset="">
+        <h3 class="mt-10">${customer.h3}</h3>
+        <h6 class="mt-10">${customer.h6_1}</h6>
+        <h6>${customer.h6_2}</h6>
+      </div>
+    `;
+    })
+    .join("");
+  customerGrid.innerHTML = gridColumnHTML;
+}
+
+generateGridColumns();
+
+leftArrowButton.addEventListener("click", () => {
+  currentCustomerIndex--;
+  if (currentCustomerIndex < 0) {
+    currentCustomerIndex = customerData.length - 3;
+  }
+  generateGridColumns();
+});
+
+rightArrowButton.addEventListener("click", () => {
+  currentCustomerIndex++;
+  if (currentCustomerIndex >= customerData.length - 2) {
+    currentCustomerIndex = 0;
+  }
+  generateGridColumns();
+});
