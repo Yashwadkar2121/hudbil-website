@@ -47,37 +47,64 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Our Brand Section
-const brandImages = [
-  { bg: "Brand img/Brand img 1.svg", logo: "Brands logo/Brand 1.svg" },
-  { bg: "Brand img/Brand img 2.svg", logo: "Brands logo/Brand 2.svg" },
-  { bg: "Brand img/Brand img 3.svg", logo: "Brands logo/Brand 3.svg" },
-  { bg: "Brand img/Brand img 4.svg", logo: "Brands logo/Brand 4.svg" },
-  { bg: "Brand img/Brand img 5.svg", logo: "Brands logo/Brand 5.svg" },
+// Define the data for each slide
+const slides = [
+  {
+    brandLogo: "Brands logo/Brand 1.svg",
+    brandPhoto: "Brand img/Brand img 1.svg",
+    listItems: ["Communication design", "WEBSITE DESIGN"],
+    heading:
+      "Whether you need to design or development your first MVP to get funding, redesign your product to improve business metrics, or get a remote design/branding team to grow faster - our product engineers are here to help you.",
+  },
+  {
+    brandLogo: "Brands logo/Brand 2.svg",
+    brandPhoto: "Brand img/Brand img 2.svg",
+    listItems: ["UX/UI design", "Web development"],
+    heading:
+      "Our team of experts will help you design and develop a product that meets your business goals.",
+  },
+  // Add more slides as needed
 ];
 
-let currentIndex = 0;
+// Define the current slide index
+let currentSlide = 0;
 
-const brandPhoto = document.querySelector(".brand-photo");
-const brandLogo = document.getElementById("brand-logo");
+// Add event listeners to the buttons
+document.getElementById("right-btn").addEventListener("click", () => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  updateSlides();
+});
 
-function updateBrand() {
-  brandPhoto.style.backgroundImage = `url("${brandImages[currentIndex].bg}")`;
-  brandLogo.src = brandImages[currentIndex].logo;
+document.getElementById("left-btn").addEventListener("click", () => {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  updateSlides();
+});
+
+// Function to update the slides
+function updateSlides() {
+  const currentSlideData = slides[currentSlide];
+
+  // Update the brand logos
+  document.getElementById("brand-logo-1").src = currentSlideData.brandLogo;
+
+  // Update the brand photos
+  document.getElementById("brand-photo-1").src = currentSlideData.brandPhoto;
+
+  // Update the list items
+  const list1 = document.getElementById("list-1");
+
+  // Update the headings
+  document.getElementById("heading-1").textContent = currentSlideData.heading;
+
+  list1.innerHTML = "";
+
+  currentSlideData.listItems.forEach((item, index) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = item;
+    list1.appendChild(listItem);
+  });
 }
-
-document.getElementById("left-arrow").addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + brandImages.length) % brandImages.length;
-  updateBrand();
-});
-
-document.getElementById("right-arrow").addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % brandImages.length;
-  updateBrand();
-});
-
-updateBrand();
-
+// Customer Love
 const customerGrid = document.getElementById("customer-grid");
 const leftArrowButton = document.getElementById("left-arrow-customer");
 const rightArrowButton = document.getElementById("right-arrow-customer");
