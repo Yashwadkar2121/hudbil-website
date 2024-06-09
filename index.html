@@ -171,7 +171,7 @@
 
         <!-- What we do -->
         <section>
-            <div class="what-we-do mt-28">
+            <div class="mt-52 mx-5">
                 <h1 class="text-3xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl">What we do</h1>
                 <h3 class="mt-5 text-sm font-light sm:text-lg md:text-2xl lg:text-3xl">Our design and development
                     approach creates impact, engaging brands and immersive digital experience that bring you a return on
@@ -238,7 +238,7 @@
                                     we do as your UX Partners</p>
                             </div>
 
-                            <div class="hover:scale-[1.1] duration-300 mt-16  md:mt-6 lg:mt-24">
+                            <div class="hover:scale-[1.1] duration-300 mt-16 md:mt-6 lg:mt-24">
                                 <img src="images/img 4.svg" alt="img-1" class="w-full h-auto">
                                 <h1 class="my-4 font-bold flex items-center lg:pt-16">
                                     <hr class="w-3 sm:w-6 mx-3"> BE-SPOKEN DEVELOPMENT
@@ -274,40 +274,52 @@
             </div>
 
 
-            <div class="mt-10 mx-5">
+            <div class="mt-10 mx-5 md:flex">
 
                 <div>
-                    <img id="brand-logo-1" src="/Brands logo/Brand 1.svg" alt="brand"
-                        class="w-[5rem] sm:w-[8rem] md:w-[12rem]">
-
-                    <h1 id="heading-1" class="font-semibold sm:text-xl">Whether you need to design or development your
-                        first MVP to get
-                        funding, redesign your product to improve business metrics, or get a remote design/branding team
-                        to grow faster
-                        - our product engineers are here to help you.</h1>
-
-                    <ol id="list-1" class="my-5">
-                        <li id="list-item-1"></li>
-                    </ol>
 
                     <div>
-                        <img id="brand-photo-1" src="/Brand img/Brand img 1.svg" alt="brand"
+                        <img id="brand-logo-1" src="/Brands logo/Brand 1.svg" alt="brand"
                             class="w-[5rem] sm:w-[8rem] md:w-[12rem]">
                     </div>
 
-                    <div class="mt-28 -mr-6 lg:mr-2 ">
-                        <button type="button" class="know-more text-xs md:text-lg p-3 border border-white rounded-xl">
-                            <span></span>
-                            Know More</button>
-                        <button type="button" title="left-arrow" id="left-btn"><i
-                                class="fa-solid fa-arrow-left border border-white p-3 rounded-xl hover:bg-white hover:text-black"></i></button>
-                        <button type="button" title="right-arrow" id="right-btn"><i
-                                class="fa-solid fa-arrow-right border border-white p-3 rounded-xl hover:bg-white hover:text-black"
-                                onclick=""></i></button>
+                    <div>
+                        <h1 id="heading-1" class="font-semibold sm:text-xl">Whether you need to design or development
+                            your
+                            first MVP to get
+                            funding, redesign your product to improve business metrics, or get a remote design/branding
+                            team
+                            to grow faster
+                            - our product engineers are here to help you.</h1>
                     </div>
 
+                    <div>
+                        <ul id="list-1" class="my-5">
+                            <li id="list-item-1">
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                            <button type="button"
+                                class="know-more text-xs md:text-lg p-3 border border-white rounded-xl">
+                                <span></span>
+                                Know More</button>
+                        </div>
+                        <div>
+                            <button type="button" title="left-arrow" id="left-btn"><i
+                                    class="fa-solid fa-arrow-left border border-white p-3 rounded-xl hover:bg-white hover:text-black"></i></button>
+                            <button type="button" title="right-arrow" id="right-btn"><i
+                                    class="fa-solid fa-arrow-right border border-white p-3 rounded-xl hover:bg-white hover:text-black"
+                                    onclick=""></i>
+                        </div></button>
+                    </div>
 
+                </div>
+
+                <div class="md:mx-20 mt-10 object-cover">
+                    <img id="brand-photo-1" src="/Brand img/Brand img 1.svg" alt="Brand">
                 </div>
 
             </div>
@@ -514,16 +526,16 @@
             </h5>
             <h5 class="relative mt-10 md:bottom-4 md:mx-10">
                 <input type="email" name="email" placeholder="Insert your email address" id="contact-email"
-                    class="text-thin bg-black w-72 md:w-96 border-white border-b-2 hover:bg-black hover:text-white">
-                <span class="absolute right-2">
+                    class="text-thin bg-black w-72 lg:w-96 border-white border-b-2 hover:bg-black hover:text-white">
+                <span class="absolute left-68 ">
                     <i class="fa-solid fa-arrow-right "></i>
                 </span>
             </h5>
         </div>
 
         <div class="mx-3 md:mx-10">
-            <div class="md:flex md:gap-8">
-                <div class="my-10 md:text-sm">
+            <div class="md:flex md:gap-8 lg:gap-12 md:text-xs lg:text-sm">
+                <div class="my-10 ">
                     <p>
                     <h3>EMAIL US AT</h3>
                     <h3>info@hudbil.com</h3>
@@ -535,31 +547,32 @@
                     </p>
 
                 </div>
-                <div class="md:relative md:top-10 md:text-sm ">
+                <div class="md:relative md:top-10 ">
                     <h5 class="md:mb-4">DROP BY AT BANGALORE OFFICE</h5>
-                    <h5 class="md:text-base">No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar
+                    <h5>No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar
                         Hoysala Nagar,
                         Bangalore -
                         560038.
                     </h5>
                 </div>
 
-                <div class="hidden md:block md:text-sm md:relative md:top-10">
+                <!-- Desktop -->
+                <div class="hidden md:block  md:relative md:top-10">
                     <h5 class="md:mb-4">Drop BY AT MUMBAI OFFICE</h5>
-                    <h5 class="md:text-base">74/II, “C” Cross Road, Opp Gate No 2,MIDC - 400093, Seepz, Andheri
+                    <h5>74/II, “C” Cross Road, Opp Gate No 2,MIDC - 400093, Seepz, Andheri
                         East, Mumbai,
                         Maharashtra.</h5>
 
                 </div>
-                <div class="hidden md:block md:text-sm md:relative md:top-10">
+                <div class="hidden md:block md:relative md:top-10">
                     <h5 class="md:mb-4">DROP BY AT DELHI OFFICE</h5>
-                    <h5 class="md:text-base">90B, Delhi - Jaipur Expy, Udyog Vihar, Sector 18, Gurugram, Sarhol,
+                    <h5>90B, Delhi - Jaipur Expy, Udyog Vihar, Sector 18, Gurugram, Sarhol,
                         Haryana - 122008.</h5>
 
                 </div>
-                <div class="hidden md:block md:text-sm md:relative md:top-10">
+                <div class="hidden md:block  md:relative md:top-10">
                     <h5 class="md:mb-4">DROP BY AT BANGALORE OFFICE</h5>
-                    <h5 class="md:text-base">No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar Hoysala
+                    <h5>No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar Hoysala
                         Nagar, Bangalore -
                         560038,
                     </h5>
@@ -567,21 +580,22 @@
             </div>
 
 
-            <div class="text-xs text-center my-10 mt-16 md:text-sm md:text-left md:flex lg:text-xs">
+            <div
+                class="text-xs text-center my-10 mt-16 md:mt-8 md:text-left md:flex lg:text-xs md:absolute md:gap-4 lg:gap-12">
                 <h5>&copy; 2024 Hudbil Private Limited. All rights reserved | &nbsp; Privacy Policy &nbsp;| &nbsp;
                     Terms &
                     Conditions &nbsp; | &nbsp;Cookies
                     Policies</h5>
                 <!-- Desktop -->
-                <div class="md:flex gap-4 md:ml-auto md:relative md:bottom-4">
+                <div class="md:flex md:gap-4 lg:gap-12 md:ml-auto md:relative md:bottom-4 md:pr-8 lg:pr-1">
                     <button type="button"
-                        class="hidden md:block border border-white rounded-full w-36 md:p-3 md:w-44">Get
+                        class="hidden md:block border border-white rounded-full w-36 md:p-3 md:w-28 md:h-14 lg:w-44">Get
                         in Touch</button>
                     <button type="button"
-                        class="hidden md:block rounded-full border border-white sm:w-36 md:p-3 md:w-44">Chat
+                        class="hidden md:block rounded-full border border-white sm:w-36 md:p-3 md:w-28  md:h-14 lg:w-44">Chat
                         with Elia</button>
                     <button type="button"
-                        class="hidden md:block rounded-full border border-white sm:w-36 md:p-3 md:w-44">Fb
+                        class="hidden md:block rounded-full border border-white sm:w-36 md:p-3 md:w-28  md:h-14 lg:w-44">Fb
                         &nbsp; Li &nbsp; lg &nbsp; Tw</button>
                 </div>
             </div>

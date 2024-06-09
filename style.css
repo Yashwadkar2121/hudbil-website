@@ -38,19 +38,6 @@
   }
 }
 
-.brand-img {
-  height: 750px;
-  width: 600px;
-}
-
-.brand-photo {
-  height: 100%;
-  width: 100%;
-  background-image: url("Brand img/Brand img 1.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .know-more {
   position: relative;
   z-index: 10;
@@ -80,14 +67,14 @@
 #navigation-menu {
   font-weight: 700;
 }
-ul li {
+#navigation-menu ul li {
   margin: 1%;
 }
-ul li:last-child {
+#navigation-menu ul li:last-child {
   margin: 0%;
   margin-right: 1%;
 }
-ul li:hover {
+#navigation-menu ul li:hover {
   color: gray;
 }
 .noscroll {

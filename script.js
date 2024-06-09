@@ -52,22 +52,82 @@ const slides = [
   {
     brandLogo: "Brands logo/Brand 1.svg",
     brandPhoto: "Brand img/Brand img 1.svg",
-    listItems: ["Communication design", "WEBSITE DESIGN"],
+    listItems: [
+      "CUMMUNICATION DESIGN",
+      "WEBSITE DESIGN",
+      "WIREFRAME DESIGN",
+      "UI/UX DESIGN",
+      "WIBESITE DEVELOPMENT",
+      "APP DEVELOPMENT",
+      "WEB DEVELOPMENT",
+      "CHAT-BOT DEVLOPMENT",
+    ],
     heading:
       "Whether you need to design or development your first MVP to get funding, redesign your product to improve business metrics, or get a remote design/branding team to grow faster - our product engineers are here to help you.",
   },
   {
     brandLogo: "Brands logo/Brand 2.svg",
     brandPhoto: "Brand img/Brand img 2.svg",
-    listItems: ["UX/UI design", "Web development"],
+    listItems: [
+      "CUMMUNICATION DESIGN",
+      "WEBSITE DESIGN",
+      "WIREFRAME DESIGN",
+      "UI DISIGN",
+      "WORDPRESS DEVLOPMENT",
+      "UX DISIGN",
+    ],
     heading:
-      "Our team of experts will help you design and develop a product that meets your business goals.",
+      "More than just a digital agency,aside from  beautiful websites and application, we love solving thorny problems with smart.",
   },
-  // Add more slides as needed
+  {
+    brandLogo: "Brands logo/Brand 3.svg",
+    brandPhoto: "Brand img/Brand img 3.svg",
+    listItems: [
+      "CUMMUNICATION DESIGN",
+      "WEBSITE DESIGN",
+      "WIREFRAME DESIGN",
+      "UI DISIGN",
+      "WORDPRESS DEVLOPMENT",
+      "UX DISIGN",
+    ],
+    heading:
+      "More than just a digital agency,aside from  beautiful websites and application, we love solving thorny problems with smart.",
+  },
+  {
+    brandLogo: "Brands logo/Brand 4.svg",
+    brandPhoto: "Brand img/Brand img 4.svg",
+    listItems: [
+      "CUMMUNICATION DESIGN",
+      "WEBSITE DESIGN",
+      "WIREFRAME DESIGN",
+      "UI DISIGN",
+      "WORDPRESS DEVLOPMENT",
+      "UX DISIGN",
+    ],
+    heading:
+      "More than just a digital agency,aside from  beautiful websites and application, we love solving thorny problems with smart.",
+  },
+  {
+    brandLogo: "Brands logo/Brand 5.svg",
+    brandPhoto: "Brand img/Brand img 5.svg",
+    listItems: [
+      "CUMMUNICATION DESIGN",
+      "WEBSITE DESIGN",
+      "WIREFRAME DESIGN",
+      "UI DISIGN",
+      "WORDPRESS DEVLOPMENT",
+      "UX DISIGN",
+    ],
+    heading:
+      "More than just a digital agency,aside from  beautiful websites and application, we love solving thorny problems with smart.",
+  },
 ];
 
 // Define the current slide index
 let currentSlide = 0;
+
+// display default values
+updateSlides();
 
 // Add event listeners to the buttons
 document.getElementById("right-btn").addEventListener("click", () => {
@@ -104,6 +164,7 @@ function updateSlides() {
     list1.appendChild(listItem);
   });
 }
+
 // Customer Love
 const customerGrid = document.getElementById("customer-grid");
 const leftArrowButton = document.getElementById("left-arrow-customer");
